@@ -54,6 +54,9 @@ class Solution:
 			result_node = result_node.next
 		
 		# Finish out any remaining nodes from either list
+
+		# Below is first attempt, but there is a better way
+		'''
 		while list1 is not None:
 			result_node.next = list1
 			list1 = list1.next
@@ -63,6 +66,10 @@ class Solution:
 			result_node.next = list2
 			list2 = list2.next
 			result_node = result_node.next
+		'''
+
+		# Instead of the above, just point to whichever list isnt None
+		result_node.next = list1 or list2
 		
 		self.printResult(head)
 		
