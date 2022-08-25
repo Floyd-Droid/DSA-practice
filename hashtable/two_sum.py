@@ -9,7 +9,7 @@ would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
 
 Category: 
-Array, Hashmap
+Array, Hash table
 
 Solution Explanation:
 As we iterate through the array, we can insert the values into a hashmap. For 
