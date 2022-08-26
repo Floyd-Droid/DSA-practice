@@ -27,7 +27,12 @@ SC: O(1)
 
 
 class Solution:
-	def isIsomorphic(self, s, t):
+	def is_isomorphic(self, s, t):
+		"""
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
 		map_s_t = {}
 		map_t_s = {}
 
@@ -44,7 +49,12 @@ class Solution:
 		
 		return True
 	
-	def firstAttempt(self, s, t):
+	def is_isomorphic_first_attempt(self, s, t):
+		"""
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
 		map = {}
 
 		# Strings are guaranteed equal length
@@ -62,11 +72,11 @@ class Solution:
 
 if __name__ == '__main__':
 	s1 = 'egg'
-	t1 = 'add'
+	t1 = 'add'  # output: True
 
 	s2 = 'paper'
-	t2 = 'title'
+	t2 = 'title'  # output: True
 
 	sol = Solution()
-	result = sol.isIsomorphic(s2, t2)
+	result = sol.is_isomorphic(s2, t2)
 	print(result)

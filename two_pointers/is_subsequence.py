@@ -25,7 +25,12 @@ SC: O(1)
 
 
 class Solution:
-	def isSubsequence(self, s, t):
+	def is_subsequence(self, s, t):
+		"""
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
 		i = j = 0
 
 		while i < len(s) and j < len(t):
@@ -41,8 +46,8 @@ class Solution:
 
 if __name__ == '__main__':
 	s1 = 'abc'
-	t1 = 'ahbgdc'
+	t1 = 'ahbgdc'  # output: True
 
 	sol = Solution()
-	result = sol.isSubsequence(s1, t1)
+	result = sol.is_subsequence(s1, t1)
 	print(result)

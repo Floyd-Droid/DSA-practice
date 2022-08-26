@@ -27,7 +27,11 @@ class ListNode(object):
         self.next = next
 
 class Solution:
-	def mergeTwoLists(self, head):
+	def reverse_linked_list(self, head):
+		"""
+        :type head: ListNode
+        :rtype: ListNode
+        """
 		current_node = head
 		prev_node = None
 
@@ -46,7 +50,6 @@ class Solution:
 		result = ''
 
 		while current_node is not None:
-			
 			result += str(current_node.val) + ' -> '
 			current_node = current_node.next
 		
@@ -61,4 +64,4 @@ if __name__ == '__main__':
 	node11 = ListNode(1, node12)
 
 	sol = Solution()
-	result = sol.mergeTwoLists(node11)
+	result = sol.reverse_linked_list(node11)

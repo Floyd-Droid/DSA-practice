@@ -25,6 +25,11 @@ SC: O(n)
 
 class Solution:
 	def two_sum(self, nums, target):
+		"""
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
 		values = {}
 		result = []
 		
@@ -41,13 +46,13 @@ class Solution:
 
 if __name__ == '__main__':
 	numbers1 = [2, 7, 11, 15]
-	target1 = 9  # answer is [0, 1]
+	target1 = 9  # output: [0, 1]
 
 	numbers2 = [3, 2, 4]
-	target2 = 6  # answer is [1, 2]
+	target2 = 6  # output: [1, 2]
 
 	numbers3 = [3, 3]
-	target3 = 6  # answer is [0, 1]
+	target3 = 6  # output: [0, 1]
 
 	sol = Solution()
 	result = sol.two_sum(numbers1, target1)

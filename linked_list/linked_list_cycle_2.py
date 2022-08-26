@@ -53,6 +53,7 @@ if __name__ == '__main__':
 	node2 = ListNode(2, node3)
 	node1 = ListNode(1, node2)
 	node4.next = node2
+	# ^ output: node 2
 	
 	sol = Solution()
 	result = sol.detect_cycle(node1)

@@ -29,6 +29,10 @@ SC: O(1)
 
 class Solution:
 	def find_pivot(self, nums):
+		"""
+        :type nums: List[int]
+        :rtype: int
+        """
 		left_sum = 0
 		total = sum(nums)
 
@@ -42,7 +46,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-	numbers1 = [1,7,3,6,5,6]
+	numbers1 = [1,7,3,6,5,6]  # output: 3
 
 	sol = Solution()
 	result = sol.find_pivot(numbers1)

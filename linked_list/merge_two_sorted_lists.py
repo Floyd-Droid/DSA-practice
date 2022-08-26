@@ -28,7 +28,12 @@ class ListNode(object):
         self.next = next
 
 class Solution:
-	def mergeTwoLists(self, list1, list2):
+	def merge_two_lists(self, list1, list2):
+		"""
+        :type list1: Optional[ListNode]
+        :type list2: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
 		if list1 is None:
 			return list2
 		if list2 is None:
@@ -71,11 +76,11 @@ class Solution:
 		# Instead of the above, just point to whichever list isnt None
 		result_node.next = list1 or list2
 		
-		self.printResult(head)
+		self.print_result(head)
 		
 		return head
 	
-	def printResult(self, head):
+	def print_result(self, head):
 		current_node = head
 		result = ''
 
@@ -97,4 +102,4 @@ if __name__ == '__main__':
 	node21 = ListNode(1, node23)
 
 	sol = Solution()
-	result = sol.mergeTwoLists(node11, node21)
+	result = sol.merge_two_lists(node11, node21)

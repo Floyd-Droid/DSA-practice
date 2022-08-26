@@ -24,14 +24,20 @@ SC: O(1)
 
 class Solution:
 	def running_sum(self, nums):
-		for i in range(1, len(nums)):
-			nums[i] = nums[i] + nums[i-1]
+		"""
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+		running_sum = 0
+
+		for i in range(len(nums)):
+			running_sum += nums[i-1]
 		
-		return nums
+		return running_sum
 
 
 if __name__ == '__main__':
-	numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # output: 55
 
 	sol = Solution()
 	result = sol.running_sum(numbers1)

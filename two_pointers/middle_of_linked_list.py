@@ -47,6 +47,9 @@ if __name__ == '__main__':
 	node12 = ListNode(2, node13)
 	node11 = ListNode(1, node12)
 
+	# for node 1 to 6, output is node 4
+	# for node 1 to 5, output is node 3
+
 	sol = Solution()
 	result = sol.middle_node(node11)
 	print(result.val)
