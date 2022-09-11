@@ -29,11 +29,15 @@ Category:
 binary search, array
 
 Solution Explanation:
+Perform a binary search. Even if rotated, one of the halves of the array will 
+be sorted. We can check which half is sorted and see if the target lies between 
+first and last value in the subarray. If so, we focus our search on that subarray. 
+Otherwise, we focus on the other half. Repeat the process until the target is 
+found or the left value equals or exceeds the right value.
 
 
-
-TC: 
-SC: 
+TC: O(log(n))
+SC: O(1)
 """
 
 
